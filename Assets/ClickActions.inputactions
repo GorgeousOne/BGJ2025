@@ -1,0 +1,54 @@
+{
+    "name": "ClickActions",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "4abeda8e-9c02-400c-a4b6-8f870f45d246",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "3613b705-6783-4dad-a1c1-5e7b3e6a2c8e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "2bbb7259-e520-45ad-b36b-9afbea883b26",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b6017df8-de91-440d-8778-48abea25e1c1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb57d436-42bb-4e38-9f74-473e31763f19",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
