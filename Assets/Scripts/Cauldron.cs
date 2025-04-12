@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +5,8 @@ public class Cauldron : MonoBehaviour
 {
     public SpriteRenderer cauldronSprite;
     LevelManager level;
-    List<Ingredient> currentIngredients = new();
-    float correctAmount;
+    List<IngredientList> currentIngredients = new();
+    float correctAmount, wrongAmount, currentValue = 0.5f;
     void Start()
     {
         level = LevelManager.instance;
@@ -15,43 +14,67 @@ public class Cauldron : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other) 
     {
+        Ingredient currentIngredient = other.GetComponent<Drop>().ingredient;
+        bool hasIngredient = false;
         if(string.Compare(other.tag, "Ingredient") == 0){
-            currentIngredients.Add(other.GetComponent<Drop>().ingredient);
-            CheckIngredients();
+            for (int i = 0; i < currentIngredients.Count; i++){
+                if(currentIngredient == currentIngredients[i].ingredient){
+                    currentIngredients[i].amount++;
+                    hasIngredient = true;
+                }
+            }
+                if(!hasIngredient){
+                    IngredientList listElement = new(){
+                        ingredient = other.GetComponent<Drop>().ingredient,
+                        amount = 1
+                    };
+                    currentIngredients.Add(listElement);
+                }
+                
+            CheckIngredients(other.GetComponent<Drop>().ingredient);
             Destroy(other.gameObject);
         }
     }
 
-    void CheckIngredients()
+    void CheckIngredients(Ingredient ingredient)
     {
-        for (int i = 0; i < currentIngredients.Count; i++){
-            if(currentIngredients[i] != level.correctIngredients[i]){
-                // DIE -- EXPLOSION -- 
-                Debug.Log("THINGS ARE CURRENTLY EXPLODING");
-                StopAllCoroutines();
+        for (int i = 0; i < level.correctIngredients.Length; i++){
+            if(ingredient == level.correctIngredients[i]){
                 LeanTween.cancel(gameObject);
-                StartCoroutine(WrongColor());
+                RightColor();
+                correctAmount++;
             }
-            else{
+            else if(ingredient == level.wrongIngredients[i]){
+                Debug.Log("THINGS ARE CURRENTLY EXPLODING");
                 LeanTween.cancel(gameObject);
-                StartCoroutine(RightColor());
+                WrongColor();
+                wrongAmount++;
             }
         }
     }
 
-    IEnumerator WrongColor()
+    void WrongColor()
     {
         Color currentColor = cauldronSprite.color;
-        LeanTween.color(gameObject, Color.black, 0.5f);
-        yield return new WaitForSeconds(0.5f);
-        LeanTween.color(gameObject, currentColor, 0.5f);
+        currentValue -= 0.5f / level.correctIngredients.Length;
+        Debug.Log(correctAmount / level.correctIngredients.Length);
+        Color lerpColor = Color.Lerp(currentColor, level.wrongColor, currentValue);
+        LeanTween.color(gameObject, lerpColor, 0.5f);
     }
 
-    IEnumerator RightColor()
+    void RightColor()
     {
         Color currentColor = cauldronSprite.color;
-        LeanTween.color(gameObject, Color.yellow, 0.5f);
-        yield return new WaitForSeconds(0.5f);
-        LeanTween.color(gameObject, currentColor, 0.5f);
+        currentValue += 0.5f / level.correctIngredients.Length;
+        Debug.Log(correctAmount / level.correctIngredients.Length);
+        Color lerpColor = Color.Lerp(currentColor, level.correctColor, currentValue);
+        LeanTween.color(gameObject, lerpColor, 0.5f);
     }
+}
+
+[System.Serializable]
+public class IngredientList
+{
+    public Ingredient ingredient;
+    public int amount;
 }
