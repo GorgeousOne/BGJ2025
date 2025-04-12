@@ -1,17 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: d4a7ea430ace94615aaff116d029ac97
-=======
-guid: a7f82131361d3f641a4a8177e26bb348
->>>>>>> Stashed changes
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1622524721689181744
-    second: firefly_0
-  - first:
-      213: -1029271052253572179
-    second: firefly_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -73,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,22 +93,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,20 +100,20 @@ TextureImporter:
       name: firefly_0
       rect:
         serializedVersion: 2
-        x: 202
-        y: 167
-        width: 640
-        height: 825
+        x: 203
+        y: 168
+        width: 638
+        height: 823
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0d14d64bc52ab79e0800000000000000
-      internalID: -1622524721689181744
+      spriteID: 3e4f410f16bb2ef4fa709ee719974e23
+      internalID: -1045422180
       vertices: []
       indices: 
       edges: []
@@ -148,20 +122,20 @@ TextureImporter:
       name: firefly_1
       rect:
         serializedVersion: 2
-        x: 1288
-        y: 53
-        width: 661
-        height: 938
+        x: 1289
+        y: 54
+        width: 659
+        height: 936
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da355d86e6b47b1f0800000000000000
-      internalID: -1029271052253572179
+      spriteID: b1833dbc40edcd84cbb780e7dd64afe9
+      internalID: 767764890
       vertices: []
       indices: 
       edges: []
@@ -170,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: adacab800ab04cd448a751a3901ecc04
     internalID: 0
     vertices: []
     indices: 
@@ -179,13 +153,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< Updated upstream
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      firefly_0: -1622524721689181744
-      firefly_1: -1029271052253572179
->>>>>>> Stashed changes
+      firefly_0: -1045422180
+      firefly_1: 767764890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

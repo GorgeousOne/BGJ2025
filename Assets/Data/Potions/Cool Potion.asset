@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352d4c68bc88eaf4b99112e5d90c75eb, type: 3}
+  m_Name: Cool Potion
+  m_EditorClassIdentifier: 
+  potionName: A cool potion
+  description: so cool and also a potion
+  possibleIngredients:
+  - {fileID: 11400000, guid: cb8d161a70cbac647be97fb785cdcfcc, type: 2}
+  - {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
+  - {fileID: 11400000, guid: fef6939d3c2c1384ab47c4cc14c308f2, type: 2}
+  - {fileID: 11400000, guid: cb730ddfffdfcbb479b8154b7f48d13e, type: 2}
+  - {fileID: 11400000, guid: be4589d1cbe27fb418ac9978514384dc, type: 2}
