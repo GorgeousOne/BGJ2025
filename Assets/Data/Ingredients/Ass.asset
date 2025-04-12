@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad0d6705df0e1784096d11f2ef17be2b, type: 3}
-  m_Name: Triangle 1
+  m_Name: Ass
   m_EditorClassIdentifier: 
-  ingredientName: TRIANGLE!
-  ingredientImage: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  ingredientName: Ass
+  ingredientImage: {fileID: 21300000, guid: 5d4fa2fdecdadcb468baaedc792cc439, type: 3}

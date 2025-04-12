@@ -3,9 +3,9 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public Ingredient[] levelIngredients;
-    public Ingredient[] correctIngredients;
-    public Ingredient neutralIngredient;
-    public Ingredient[] wrongIngredients;
+    public LevelIngredient[] ingredients;
+    public int maxIngredients;
+    public float errorMargin;
     public Color correctColor, wrongColor;
     public Slot[] slots;
     public static LevelManager instance;
@@ -21,5 +21,11 @@ public class LevelManager : MonoBehaviour
             slots[i].SetItem(levelIngredients[i]);
         }
     }
+}
 
+[System.Serializable]
+public class LevelIngredient
+{
+    public Ingredient ingredient;
+    public float correctAmount;
 }

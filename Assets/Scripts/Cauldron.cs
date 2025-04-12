@@ -6,7 +6,7 @@ public class Cauldron : MonoBehaviour
     public SpriteRenderer cauldronSprite;
     LevelManager level;
     List<IngredientList> currentIngredients = new();
-    float correctAmount, wrongAmount, currentValue = 0.5f;
+    float currentValue = 0.5f, currentIngredientsAmount;
     void Start()
     {
         level = LevelManager.instance;
@@ -14,60 +14,74 @@ public class Cauldron : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other) 
     {
+        Debug.Log("Something entered");
         Ingredient currentIngredient = other.GetComponent<Drop>().ingredient;
         bool hasIngredient = false;
         if(string.Compare(other.tag, "Ingredient") == 0){
+            currentIngredientsAmount++;
             for (int i = 0; i < currentIngredients.Count; i++){
                 if(currentIngredient == currentIngredients[i].ingredient){
                     currentIngredients[i].amount++;
+                    CheckIngredients(currentIngredients[i]);
                     hasIngredient = true;
                 }
             }
-                if(!hasIngredient){
-                    IngredientList listElement = new(){
-                        ingredient = other.GetComponent<Drop>().ingredient,
-                        amount = 1
-                    };
-                    currentIngredients.Add(listElement);
-                }
-                
-            CheckIngredients(other.GetComponent<Drop>().ingredient);
-            Destroy(other.gameObject);
+            if(!hasIngredient){
+                IngredientList listElement = new(){
+                    ingredient = other.GetComponent<Drop>().ingredient,
+                    amount = 1
+                };
+                currentIngredients.Add(listElement);   
+                //CheckIngredients(other.GetComponent<Drop>().ingredient);
+                //if(wrongAmount >= level.wrongAmount){
+                //    Debug.Log("EXPLOSION");
+                //}
+            }
+            CheckPercentages();
+        }
+        Destroy(other.gameObject);
+    }
+
+    void CheckPercentages()
+    {
+        for (int i = 0; i < currentIngredients.Count; i++){
+            currentIngredients[i].percentage = currentIngredients[i].amount / currentIngredientsAmount;
+        }
+        for (int i = 0; i < currentIngredients.Count; i++){
+            if(currentIngredients[i].percentage == level.ingredients[i].correctAmount + level.errorMargin && currentIngredients[i].percentage == level.ingredients[i].correctAmount - level.errorMargin){
+                Debug.Log("correct amount found");
+            }
+            else{ return; }
+            Debug.Log("all correct");
         }
     }
 
-    void CheckIngredients(Ingredient ingredient)
+
+    void CheckIngredients(IngredientList ingredient)
     {
-        for (int i = 0; i < level.correctIngredients.Length; i++){
-            if(ingredient == level.correctIngredients[i]){
-                LeanTween.cancel(gameObject);
-                RightColor();
-                correctAmount++;
-            }
-            else if(ingredient == level.wrongIngredients[i]){
-                Debug.Log("THINGS ARE CURRENTLY EXPLODING");
-                LeanTween.cancel(gameObject);
-                WrongColor();
-                wrongAmount++;
+        for (int i = 0; i < level.ingredients.Length; i++){
+            if(ingredient.ingredient == level.ingredients[i].ingredient){
+                if(ingredient.percentage < level.ingredients[i].correctAmount){
+                    RightColor();
+                }
+                else{
+                    WrongColor();
+                }
             }
         }
     }
 
     void WrongColor()
     {
-        Color currentColor = cauldronSprite.color;
-        currentValue -= 0.5f / level.correctIngredients.Length;
-        Debug.Log(correctAmount / level.correctIngredients.Length);
-        Color lerpColor = Color.Lerp(currentColor, level.wrongColor, currentValue);
+        currentValue -= 0.1f;
+        Color lerpColor = Color.Lerp(level.wrongColor, level.correctColor, currentValue);
         LeanTween.color(gameObject, lerpColor, 0.5f);
     }
 
     void RightColor()
     {
-        Color currentColor = cauldronSprite.color;
-        currentValue += 0.5f / level.correctIngredients.Length;
-        Debug.Log(correctAmount / level.correctIngredients.Length);
-        Color lerpColor = Color.Lerp(currentColor, level.correctColor, currentValue);
+        currentValue += 0.1f;
+        Color lerpColor = Color.Lerp(level.wrongColor, level.correctColor, currentValue);
         LeanTween.color(gameObject, lerpColor, 0.5f);
     }
 }
@@ -77,4 +91,5 @@ public class IngredientList
 {
     public Ingredient ingredient;
     public int amount;
+    public float percentage;
 }
