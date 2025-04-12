@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cauldron_wip_0: 536774627578594189
+      cauldron_wip_1: 6604487825169927625
+      cauldron_wip_10: -745768960166488270
+      cauldron_wip_11: -5969769484967384891
+      cauldron_wip_2: -219519414808969190
+      cauldron_wip_3: 7836607483031924114
+      cauldron_wip_4: -3492877039751273868
+      cauldron_wip_5: 2995180698308614918
+      cauldron_wip_6: -692059434372809822
+      cauldron_wip_7: 7846826063106639655
+      cauldron_wip_8: -3928717864749566327
+      cauldron_wip_9: -7947818389555789107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
