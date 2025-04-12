@@ -14,7 +14,6 @@ public class Cauldron : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other) 
     {
-        Debug.Log("Something entered");
         Ingredient currentIngredient = other.GetComponent<Drop>().ingredient;
         bool hasIngredient = false;
         if(string.Compare(other.tag, "Ingredient") == 0){
@@ -32,12 +31,11 @@ public class Cauldron : MonoBehaviour
                     amount = 1
                 };
                 currentIngredients.Add(listElement);   
-                //CheckIngredients(other.GetComponent<Drop>().ingredient);
-                //if(wrongAmount >= level.wrongAmount){
-                //    Debug.Log("EXPLOSION");
-                //}
             }
             CheckPercentages();
+            if(currentIngredientsAmount > level.maxIngredients){
+                level.FailLevel();
+            }
         }
         Destroy(other.gameObject);
     }
@@ -49,10 +47,10 @@ public class Cauldron : MonoBehaviour
         }
         for (int i = 0; i < currentIngredients.Count; i++){
             if(currentIngredients[i].percentage == level.ingredients[i].correctAmount + level.errorMargin && currentIngredients[i].percentage == level.ingredients[i].correctAmount - level.errorMargin){
-                Debug.Log("correct amount found");
+                //Percentage correct
             }
             else{ return; }
-            Debug.Log("all correct");
+            level.CompleteLevel();
         }
     }
 
@@ -61,12 +59,8 @@ public class Cauldron : MonoBehaviour
     {
         for (int i = 0; i < level.ingredients.Length; i++){
             if(ingredient.ingredient == level.ingredients[i].ingredient){
-                if(ingredient.percentage < level.ingredients[i].correctAmount){
-                    RightColor();
-                }
-                else{
-                    WrongColor();
-                }
+                if(ingredient.percentage < level.ingredients[i].correctAmount){ RightColor(); }
+                else{ WrongColor(); }
             }
         }
     }
