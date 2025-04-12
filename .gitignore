@@ -66,3 +66,6 @@ crashlytics-build.properties
 
 UserSettings/Layouts/default-6000.dwlt
 UserSettings/Layouts/default-6000.dwlt
+
+#autosave for cubase
+*.bak
