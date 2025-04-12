@@ -16,15 +16,15 @@ MonoBehaviour:
   description: so cool and also a potion
   ingredients:
   - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
-    correctAmount: 0.1
+    correctAmount: 0.5
   - ingredient: {fileID: 11400000, guid: cb8d161a70cbac647be97fb785cdcfcc, type: 2}
-    correctAmount: 0.3
+    correctAmount: 0.5
   - ingredient: {fileID: 11400000, guid: fef6939d3c2c1384ab47c4cc14c308f2, type: 2}
-    correctAmount: 0.15
+    correctAmount: 0
   - ingredient: {fileID: 11400000, guid: be4589d1cbe27fb418ac9978514384dc, type: 2}
-    correctAmount: 0.25
+    correctAmount: 0
   - ingredient: {fileID: 11400000, guid: cb730ddfffdfcbb479b8154b7f48d13e, type: 2}
-    correctAmount: 0.2
+    correctAmount: 0
   maxIngredients: 25
   errorMargin: 0.001
   correctColor: {r: 0.8396226, g: 0.31287822, b: 0.31287822, a: 1}

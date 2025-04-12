@@ -15,29 +15,32 @@ public class Cauldron : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other) 
     {
         Ingredient currentIngredient = other.GetComponent<Drop>().ingredient;
-        bool hasIngredient = false;
         if(string.Compare(other.tag, "Ingredient") == 0){
             currentIngredientsAmount++;
             for (int i = 0; i < currentIngredients.Count; i++){
                 if(currentIngredient == currentIngredients[i].ingredient){
                     currentIngredients[i].amount++;
                     CheckIngredients(currentIngredients[i]);
-                    hasIngredient = true;
                 }
             }
-            if(!hasIngredient){
-                IngredientList listElement = new(){
-                    ingredient = other.GetComponent<Drop>().ingredient,
-                    amount = 1
-                };
-                currentIngredients.Add(listElement);   
-            }
             CheckPercentages();
-            if(currentIngredientsAmount > level.currentPotion.maxIngredients){
-                level.FailLevel();
-            }
+            if(currentIngredientsAmount > level.currentPotion.maxIngredients){ level.FailLevel(); }
         }
         Destroy(other.gameObject);
+    }
+
+    public void PrepareIngredients(LevelIngredient[] _ingredient)
+    {
+        foreach (LevelIngredient item in _ingredient){
+            float amount = _ingredient.Length;
+            IngredientList listElement = new(){
+                ingredient = item.ingredient,
+                amount = 1,
+                percentage = 1 / amount
+            };
+            currentIngredients.Add(listElement);
+            currentIngredientsAmount++;
+        }
     }
 
     void CheckPercentages()
@@ -45,14 +48,15 @@ public class Cauldron : MonoBehaviour
         for (int i = 0; i < currentIngredients.Count; i++){
             currentIngredients[i].percentage = currentIngredients[i].amount / currentIngredientsAmount;
         }
+        bool wrongPercentage = false;
         for (int i = 0; i < currentIngredients.Count; i++){
-            if(currentIngredients[i].percentage == level.currentPotion.ingredients[i].correctAmount + level.currentPotion.errorMargin 
-                && currentIngredients[i].percentage == level.currentPotion.ingredients[i].correctAmount - level.currentPotion.errorMargin){
+            if(currentIngredients[i].percentage >= level.currentPotion.ingredients[i].correctAmount - level.currentPotion.errorMargin 
+                && currentIngredients[i].percentage <= level.currentPotion.ingredients[i].correctAmount + level.currentPotion.errorMargin){
                 //Percentage correct
             }
-            else{ return; }
-            level.CompleteLevel();
+            else{ wrongPercentage = true; }
         }
+        if (!wrongPercentage){ level.CompleteLevel(); }
     }
 
 
@@ -69,6 +73,7 @@ public class Cauldron : MonoBehaviour
     void WrongColor()
     {
         currentValue -= 0.1f;
+        if(currentValue < 0){ level.FailLevel(); }
         Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
         LeanTween.color(gameObject, lerpColor, 0.5f);
     }

@@ -11,20 +11,45 @@ public class LevelSelection : MonoBehaviour
     public Potion[] levels;
     public TMPro.TMP_Text potionName, potionDescription;
     public LevelManager levelManager;
+    public TMPro.TMP_FontAsset gibberishFont, normalFont;
     List<GameObject> currentIngredients = new();
     int currentLevel;
+    public static LevelSelection instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
         startLevelButton.onClick.AddListener(StartLevel);
         lastLevelButton.onClick.AddListener(LastLevel);
         nextLevelButton.onClick.AddListener(NextLevel);
-
         SetLevel(0);
+    }
+
+    public void LevelComplete(int index)
+    {
+        levelSelectionHolder.SetActive(true);
+        PlayerPrefs.SetInt(levels[index].potionName, 1);
+        potionName.font = normalFont;
+        potionName.text = levels[index].potionName;
+        potionDescription.font = normalFont;
+        potionDescription.text = levels[index].description;
+        foreach (GameObject ingredient in currentIngredients){ Destroy(ingredient); }
+        currentIngredients.Clear();
+        foreach (LevelIngredient ingredient in levels[currentLevel].ingredients){
+            GameObject current = Instantiate(ingredientPrefab, ingredientsHolder);
+            current.GetComponent<MenuIngredient>().image.sprite = ingredient.ingredient.ingredientImage;
+            currentIngredients.Add(current);
+        }
     }
 
     void LastLevel()
     {
+        potionName.font = gibberishFont;
+        potionDescription.font = gibberishFont;
         if(currentLevel > 0){ currentLevel--; }
         else{ currentLevel = levels.Length-1; }
         SetLevel(currentLevel);
@@ -32,6 +57,8 @@ public class LevelSelection : MonoBehaviour
 
     void NextLevel()
     {
+        potionName.font = gibberishFont;
+        potionDescription.font = gibberishFont;
         if(currentLevel < levels.Length-1){ currentLevel++; }
         else{ currentLevel = 0; }
         SetLevel(currentLevel);
@@ -41,13 +68,22 @@ public class LevelSelection : MonoBehaviour
     {
         levelManager.currentPotion = levels[currentLevel];
         levelSelectionHolder.SetActive(false);
-        levelManager.StartLevel();
+        levelManager.StartLevel(currentLevel);
     }
 
     void SetLevel(int index)
     {
-        potionName.text = levels[index].potionName;
-        potionDescription.text = levels[index].description;
+        if(PlayerPrefs.GetInt(levels[index].potionName) == 1){
+            potionName.font = normalFont;
+            potionName.text = levels[index].potionName;
+            potionDescription.font = normalFont;
+            potionDescription.text = levels[index].description;
+        }
+        else{
+            potionName.text = "<Uppercase>" + levels[index].potionName + "</Uppercase";
+            potionDescription.text = "<Uppercase>" + levels[index].description + "</Uppercase";
+            foreach (GameObject ingredient in currentIngredients){ Destroy(ingredient); }
+        }
         foreach (GameObject ingredient in currentIngredients){ Destroy(ingredient); }
         currentIngredients.Clear();
         foreach (LevelIngredient ingredient in levels[currentLevel].ingredients){

@@ -10,6 +10,9 @@ public class LevelManager : MonoBehaviour
     public GameObject endscreen;
     ColorAdjustments colorAdjustments;
     public Slot[] slots;
+    public Cauldron cauldron;
+    int index;
+    LevelSelection levelselection;
     public static LevelManager instance;
 
     void Awake()
@@ -17,12 +20,17 @@ public class LevelManager : MonoBehaviour
         instance = this;
     }
 
-    public void StartLevel()
+    void Start()
     {
-        for(int i = 0; i < currentPotion.ingredients.Length; i++){
-            slots[i].SetItem(currentPotion.ingredients[i].ingredient);
-        }
+        levelselection = LevelSelection.instance;
         globalVolume.profile.TryGet(out colorAdjustments);
+    }
+
+    public void StartLevel(int _index)
+    {
+        index = _index;
+        for(int i = 0; i < currentPotion.ingredients.Length; i++){ slots[i].SetItem(currentPotion.ingredients[i].ingredient); }
+        cauldron.PrepareIngredients(currentPotion.ingredients);
     }
 
     public void FailLevel()
@@ -32,7 +40,7 @@ public class LevelManager : MonoBehaviour
 
     public void CompleteLevel()
     {
-        // show book
+        levelselection.LevelComplete(index);
     }
 
     IEnumerator Flashbang()

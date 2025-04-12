@@ -276,6 +276,7 @@ MonoBehaviour:
   - {fileID: 901785648}
   - {fileID: 657704268}
   - {fileID: 1651934632}
+  cauldron: {fileID: 1250385868}
 --- !u!4 &313181575
 Transform:
   m_ObjectHideFlags: 0
@@ -466,7 +467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 133, y: -376}
+  m_AnchoredPosition: {x: 38.303497, y: -376}
   m_SizeDelta: {x: 230, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &519420028
@@ -813,7 +814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377, y: -372}
+  m_AnchoredPosition: {x: 282.3035, y: -372}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &835933924
@@ -946,6 +947,8 @@ MonoBehaviour:
   potionName: {fileID: 2115159039}
   potionDescription: {fileID: 1541652203}
   levelManager: {fileID: 313181574}
+  gibberishFont: {fileID: 11400000, guid: d01641e21942547a0bfaaeec7e8e5fc5, type: 2}
+  normalFont: {fileID: 11400000, guid: c3f0ab11ec46a47a9a56f95737699c41, type: 2}
 --- !u!114 &869857799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1074,7 +1077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114.69646, y: 3.2441998}
+  m_AnchoredPosition: {x: 20, y: 3.2441998}
   m_SizeDelta: {x: 966.708, y: 963.4928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120808877
@@ -1314,8 +1317,8 @@ Transform:
   m_GameObject: {fileID: 1250385867}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -1.8966, z: 0}
-  m_LocalScale: {x: 5.12, y: 2.3831432, z: 1}
+  m_LocalPosition: {x: -0.0287, y: -1.7614, z: 0}
+  m_LocalScale: {x: 4.8496375, y: 2.6533916, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1419,6 +1422,7 @@ RectTransform:
   - {fileID: 28660518}
   - {fileID: 1684853477}
   - {fileID: 1120808876}
+  - {fileID: 1988745895}
   - {fileID: 2115159041}
   - {fileID: 1541652205}
   - {fileID: 1481628027}
@@ -1549,7 +1553,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116, y: -375}
+  m_AnchoredPosition: {x: -210.6965, y: -375}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1514370701
@@ -1680,7 +1684,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 32
-  m_fontStyle: 16
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1742,7 +1746,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112.70913, y: 140.5523}
+  m_AnchoredPosition: {x: 18.012627, y: 201}
   m_SizeDelta: {x: 751.0084, y: 89.1045}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1651934632 stripped
@@ -1966,7 +1970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -783.7296, y: 3.2441998}
+  m_AnchoredPosition: {x: -878.42615, y: 3.2441998}
   m_SizeDelta: {x: 832.804, y: 963.4928}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684853478
@@ -2040,7 +2044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112.70996, y: -103.88053}
+  m_AnchoredPosition: {x: 18.013458, y: -103.88053}
   m_SizeDelta: {x: 751.01, y: 307.7612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708225417
@@ -2202,6 +2206,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987581300}
+  m_CullTransparentMesh: 1
+--- !u!1 &1988745894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1988745895}
+  - component: {fileID: 1988745897}
+  - component: {fileID: 1988745896}
+  m_Layer: 5
+  m_Name: Potion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1988745895
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988745894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1467019515}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 29.303497, y: 379.7}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1988745896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988745894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5bae77f51f1778d40be02f01c728c8d4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1988745897
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988745894}
   m_CullTransparentMesh: 1
 --- !u!1 &2036151783
 GameObject:
@@ -2410,7 +2489,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 16
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2472,7 +2551,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112.70913, y: 272.42694}
+  m_AnchoredPosition: {x: 18.012627, y: 272.42694}
   m_SizeDelta: {x: 751.0084, y: 89.1045}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
