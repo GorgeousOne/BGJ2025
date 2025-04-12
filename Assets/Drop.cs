@@ -4,16 +4,16 @@ public class Drop : MonoBehaviour
 {
 	
 	public SpriteRenderer itemDisplay;
-	public Ingredient item;
+	public Ingredient ingredient;
 	
-	//the getcompinent should work but it doesnt!
-	void Start() {
-		// itemDisplay = GetComponent<SpriteRenderer>();
-	}
+    void Update()
+    {
+        if(transform.localPosition.y < -1000){ Destroy(gameObject); }
+    }
 
-	public void setItem(Ingredient ingredient) {
-		item = ingredient;
-		itemDisplay.sprite = item.ingredientImage;
+    public void setItem(Ingredient item) {
+		ingredient = item;
+		itemDisplay.sprite = ingredient.ingredientImage;
 	}
 
 	public void setFalling() {
