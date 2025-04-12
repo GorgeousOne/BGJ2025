@@ -5,11 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class LevelManager : MonoBehaviour
 {
-    public Ingredient[] levelIngredients;
-    public LevelIngredient[] ingredients;
-    public int maxIngredients;
-    public float errorMargin;
-    public Color correctColor, wrongColor;
+    public Potion currentPotion;
     public Volume globalVolume;
     ColorAdjustments colorAdjustments;
     public Slot[] slots;
@@ -22,8 +18,8 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        for(int i = 0; i < levelIngredients.Length; i++){
-            slots[i].SetItem(levelIngredients[i]);
+        for(int i = 0; i < currentPotion.ingredients.Length; i++){
+            slots[i].SetItem(currentPotion.ingredients[i].ingredient);
         }
         globalVolume.profile.TryGet(out colorAdjustments);
     }

@@ -33,7 +33,7 @@ public class Cauldron : MonoBehaviour
                 currentIngredients.Add(listElement);   
             }
             CheckPercentages();
-            if(currentIngredientsAmount > level.maxIngredients){
+            if(currentIngredientsAmount > level.currentPotion.maxIngredients){
                 level.FailLevel();
             }
         }
@@ -46,7 +46,8 @@ public class Cauldron : MonoBehaviour
             currentIngredients[i].percentage = currentIngredients[i].amount / currentIngredientsAmount;
         }
         for (int i = 0; i < currentIngredients.Count; i++){
-            if(currentIngredients[i].percentage == level.ingredients[i].correctAmount + level.errorMargin && currentIngredients[i].percentage == level.ingredients[i].correctAmount - level.errorMargin){
+            if(currentIngredients[i].percentage == level.currentPotion.ingredients[i].correctAmount + level.currentPotion.errorMargin 
+                && currentIngredients[i].percentage == level.currentPotion.ingredients[i].correctAmount - level.currentPotion.errorMargin){
                 //Percentage correct
             }
             else{ return; }
@@ -57,9 +58,9 @@ public class Cauldron : MonoBehaviour
 
     void CheckIngredients(IngredientList ingredient)
     {
-        for (int i = 0; i < level.ingredients.Length; i++){
-            if(ingredient.ingredient == level.ingredients[i].ingredient){
-                if(ingredient.percentage < level.ingredients[i].correctAmount){ RightColor(); }
+        for (int i = 0; i < level.currentPotion.ingredients.Length; i++){
+            if(ingredient.ingredient == level.currentPotion.ingredients[i].ingredient){
+                if(ingredient.percentage < level.currentPotion.ingredients[i].correctAmount){ RightColor(); }
                 else{ WrongColor(); }
             }
         }
@@ -68,14 +69,14 @@ public class Cauldron : MonoBehaviour
     void WrongColor()
     {
         currentValue -= 0.1f;
-        Color lerpColor = Color.Lerp(level.wrongColor, level.correctColor, currentValue);
+        Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
         LeanTween.color(gameObject, lerpColor, 0.5f);
     }
 
     void RightColor()
     {
         currentValue += 0.1f;
-        Color lerpColor = Color.Lerp(level.wrongColor, level.correctColor, currentValue);
+        Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
         LeanTween.color(gameObject, lerpColor, 0.5f);
     }
 }

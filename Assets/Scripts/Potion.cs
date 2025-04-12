@@ -4,5 +4,8 @@ using UnityEngine;
 public class Potion : ScriptableObject
 {
     public string potionName, description;
-    public Ingredient[] possibleIngredients;
+    public LevelIngredient[] ingredients;
+    public int maxIngredients;
+    public float errorMargin;
+    public Color correctColor, wrongColor;
 }
