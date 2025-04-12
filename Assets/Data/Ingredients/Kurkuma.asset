@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad0d6705df0e1784096d11f2ef17be2b, type: 3}
-  m_Name: Ass
+  m_Name: Kurkuma
   m_EditorClassIdentifier: 
-  ingredientName: Ass
-  ingredientImage: {fileID: 21300000, guid: 5d4fa2fdecdadcb468baaedc792cc439, type: 3}
+  ingredientName: Kurkuma
+  ingredientImage: {fileID: -3175694589373989737, guid: d0ec9effe00410443afe4331a5e8c328, type: 3}
