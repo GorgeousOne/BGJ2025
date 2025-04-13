@@ -15,4 +15,4 @@ MonoBehaviour:
   ingredientName: Seestar
   ingredientImages:
   - {fileID: 2771018343892702601, guid: be6078c0ab6e5c34e9052823b6f86c04, type: 3}
-  - {fileID: -3542595799955571495, guid: 9898117d1ed8a2b42bcf714e91f90f34, type: 3}
+  - {fileID: 5841859166511862138, guid: be6078c0ab6e5c34e9052823b6f86c04, type: 3}

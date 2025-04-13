@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 9898117d1ed8a2b42bcf714e91f90f34
+guid: 6f57ee84c80ba1441a7fa6aade9af608
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3542595799955571495
-    second: seestern_platzhalter_0
+      213: 8509550459451208454
+    second: water_0
+  - first:
+      213: 3559705528278350927
+    second: water_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: seestern_platzhalter_0
+      name: water_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 115
-        width: 822
-        height: 833
+        x: 43
+        y: 29
+        width: 629
+        height: 406
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9dc7bd0b3eb26dec0800000000000000
-      internalID: -3542595799955571495
+      spriteID: 603f9ddae0ff71670800000000000000
+      internalID: 8509550459451208454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water_1
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 47
+        width: 633
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c760e515d966130800000000000000
+      internalID: 3559705528278350927
       vertices: []
       indices: 
       edges: []
@@ -147,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      seestern_platzhalter_0: -3542595799955571495
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 8396e3953c6ab3b418757011cd444d8d
+guid: fd589f02fed7fcc47ac5d7a3a9d77240
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1326192347945098025
-    second: frogleg_0
-  - first:
-      213: -3715753065564473513
-    second: frogleg_1
-  - first:
-      213: -5023561771179386887
-    second: frogleg_2
-  - first:
-      213: -2259169702729376803
-    second: frogleg_3
-  - first:
-      213: 8175909724076063550
-    second: frogleg_4
+      213: 5087230003070655307
+    second: drawer_lid_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frogleg_0
+      name: drawer_lid_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 34
+        y: 21
+        width: 130
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d424e4061b689de0800000000000000
-      internalID: -1326192347945098025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frogleg_1
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 757f5f5164efe6cc0800000000000000
-      internalID: -3715753065564473513
+      spriteID: b4b5cb70cb8799640800000000000000
+      internalID: 5087230003070655307
       vertices: []
       indices: 
       edges: []
@@ -172,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5634a2758e6150a41a306e3ef9a3ee17
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -182,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      frogleg_0: -1326192347945098025
-      frogleg_1: -3715753065564473513
+      drawer_lid_0: 5087230003070655307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

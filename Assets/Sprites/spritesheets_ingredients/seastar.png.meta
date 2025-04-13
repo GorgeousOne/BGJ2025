@@ -131,10 +131,10 @@ TextureImporter:
       name: seastar_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 115
-        width: 822
-        height: 833
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: seastar_1
       rect:
         serializedVersion: 2
-        x: 1121
-        y: 102
-        width: 839
-        height: 865
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,99 +171,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: seastar_2
-      rect:
-        serializedVersion: 2
-        x: 1956
-        y: 486
-        width: 11
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 133132796d06a9580800000000000000
-      internalID: -8819630445476768975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: seastar_3
-      rect:
-        serializedVersion: 2
-        x: 1961
-        y: 480
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 548b0a090ecdae340800000000000000
-      internalID: 4893966802148702277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: seastar_4
-      rect:
-        serializedVersion: 2
-        x: 1963
-        y: 471
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 612b2ae017e2575a0800000000000000
-      internalID: -6524257422064569834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: seastar_5
-      rect:
-        serializedVersion: 2
-        x: 1957
-        y: 444
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2d37942006614650800000000000000
-      internalID: 6215361111547919662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f23553efb2572cc4f970bd3ed2a7e841
     internalID: 0
     vertices: []
     indices: 
@@ -275,10 +187,6 @@ TextureImporter:
     nameFileIdTable:
       seastar_0: 2771018343892702601
       seastar_1: 5841859166511862138
-      seastar_2: -8819630445476768975
-      seastar_3: 4893966802148702277
-      seastar_4: -6524257422064569834
-      seastar_5: 6215361111547919662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

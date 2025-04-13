@@ -100,10 +100,10 @@ TextureImporter:
       name: firefly_0
       rect:
         serializedVersion: 2
-        x: 203
-        y: 168
-        width: 638
-        height: 823
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,10 +122,10 @@ TextureImporter:
       name: firefly_1
       rect:
         serializedVersion: 2
-        x: 1289
-        y: 54
-        width: 659
-        height: 936
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

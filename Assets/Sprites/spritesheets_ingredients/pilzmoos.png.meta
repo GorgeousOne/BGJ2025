@@ -116,10 +116,10 @@ TextureImporter:
       name: pilzmoos_0
       rect:
         serializedVersion: 2
-        x: 161
-        y: 199
-        width: 797
-        height: 575
+        x: 52
+        y: 4
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2b9c202bfde46d542a63f4506290bdbb
     internalID: 0
     vertices: []
     indices: 

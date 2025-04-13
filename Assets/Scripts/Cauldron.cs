@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-    public SpriteRenderer liquidSprite;
+    public SpriteRenderer liquidSprite, liquidTextureSprite;
     public GameObject splashVFX;
     public Color startColor;
     LevelManager level;
@@ -38,7 +38,7 @@ public class Cauldron : MonoBehaviour
                 }
             }
             CheckPercentages();
-            if(currentIngredientsAmount > level.currentPotion.maxIngredients){ level.FailLevel(); }
+            if(currentIngredientsAmount > level.currentPotion.maxIngredients){ currentValue = 0.5f; level.FailLevel(); }
         }
         Instantiate(splashVFX, other.transform.position, Quaternion.identity);
         LeanTween.cancel(other.gameObject);
@@ -66,6 +66,7 @@ public class Cauldron : MonoBehaviour
         currentIngredientsAmount = 0;
         currentValue = 0.5f;
         liquidSprite.color = startColor;
+        liquidTextureSprite.color = startColor;
     }
 
     void CheckPercentages()
@@ -101,6 +102,7 @@ public class Cauldron : MonoBehaviour
         if(currentValue < 0){ level.FailLevel(); }
         Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
         LeanTween.color(liquidSprite.gameObject, lerpColor, 0.5f);
+        LeanTween.color(liquidTextureSprite.gameObject, lerpColor, 0.5f);
     }
 
     void RightColor()
@@ -108,6 +110,7 @@ public class Cauldron : MonoBehaviour
         currentValue += 0.1f;
         Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
         LeanTween.color(liquidSprite.gameObject, lerpColor, 0.5f);
+        LeanTween.color(liquidTextureSprite.gameObject, lerpColor, 0.5f);
     }
 
     public IEnumerator Shake(float duration, float magnitude)
