@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ad0d6705df0e1784096d11f2ef17be2b, type: 3}
-  m_Name: Heart
+  m_Name: Skull
   m_EditorClassIdentifier: 
-  ingredientName: Heart
+  ingredientName: Skull
   ingredientImages:
-  - {fileID: 21300000, guid: 4b65454082d9f8e4782febe1b7199a70, type: 3}
-  - {fileID: 21300000, guid: 4b65454082d9f8e4782febe1b7199a70, type: 3}
-  sound: {fileID: 8300000, guid: 64f10d1af3f2cc84cb2ee7bac0546e1f, type: 3}
+  - {fileID: 21300000, guid: 7c437f116fae93f44a3c5c9486ef35fb, type: 3}
+  - {fileID: 21300000, guid: 7c437f116fae93f44a3c5c9486ef35fb, type: 3}
+  sound: {fileID: 8300000, guid: eb296e6b9bbb3694e87fd0219c9aa029, type: 3}
