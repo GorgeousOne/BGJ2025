@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator Flashbang()
     {
         LeanTween.value(gameObject, 0f, 9f, 0.1f).setOnUpdate((float val) => { colorAdjustments.postExposure.Override(val); } );
-        StartCoroutine(Screenshake(3f, 1f));
+        StartCoroutine(Screenshake(3f, 0.3f));
         yield return new WaitForSeconds(1f);
         endscreen.SetActive(true);
         uiEndScreen.gameObject.SetActive(true);

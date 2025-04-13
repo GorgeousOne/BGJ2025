@@ -11,15 +11,18 @@ public class LevelSelection : MonoBehaviour
     public Button startLevelButton, lastLevelButton, nextLevelButton, menuButton, failButton;
     public Potion[] levels;
     public TMPro.TMP_Text potionName, completePotionName, potionDescription;
+    public AudioClip pageTurnSound;
     public LevelManager levelManager;
     public TMPro.TMP_FontAsset gibberishFont, normalFont;
     List<GameObject> currentIngredients = new();
     int currentLevel;
     public static LevelSelection instance;
+    AudioSource source;
 
     void Awake()
     {
         instance = this;
+        source = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -60,6 +63,8 @@ public class LevelSelection : MonoBehaviour
         if(currentLevel > 0){ currentLevel--; }
         else{ currentLevel = levels.Length-1; }
         SetLevel(currentLevel);
+        source.pitch = Random.Range(0.9f, 1.1f);
+        source.PlayOneShot(pageTurnSound);
     }
 
     void NextLevel()
@@ -70,6 +75,8 @@ public class LevelSelection : MonoBehaviour
         if(currentLevel < levels.Length-1){ currentLevel++; }
         else{ currentLevel = 0; }
         SetLevel(currentLevel);
+        source.pitch = Random.Range(0.9f, 1.1f);
+        source.PlayOneShot(pageTurnSound);
     }
 
     void StartLevel()
