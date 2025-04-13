@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Frogleg
   m_EditorClassIdentifier: 
   ingredientName: Frogleg
-  ingredientImage: {fileID: 8175909724076063550, guid: 8396e3953c6ab3b418757011cd444d8d, type: 3}
+  ingredientImages:
+  - {fileID: -5023561771179386887, guid: 8396e3953c6ab3b418757011cd444d8d, type: 3}
+  - {fileID: 8175909724076063550, guid: 8396e3953c6ab3b418757011cd444d8d, type: 3}

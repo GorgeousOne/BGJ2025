@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      room-background-with-shelves_0: 8843534916869780488
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

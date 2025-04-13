@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Scenes/StartScreen.unity.meta
 guid: 27e9d62d41ea242648100c43fd07b9b9
+========
+guid: ff62c8b08311be94691e75827429147e
+>>>>>>>> Stashed changes:Assets/Sounds/Foley/Recordings/PoD_Blubber.m4a.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Firefly
   m_EditorClassIdentifier: 
   ingredientName: Firefly
-  ingredientImage: {fileID: -1045422180, guid: d4a7ea430ace94615aaff116d029ac97, type: 3}
+  ingredientImages:
+  - {fileID: -1045422180, guid: d4a7ea430ace94615aaff116d029ac97, type: 3}
+  - {fileID: 767764890, guid: d4a7ea430ace94615aaff116d029ac97, type: 3}

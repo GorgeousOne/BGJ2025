@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      room-background_0: -6284710670569693487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,6 +14,6 @@ public class Slot : MonoBehaviour {
 	public void SetItem(Ingredient ingredient)
 	{
 		item = ingredient;
-		itemDisplay.sprite = ingredient.ingredientImage;
+		itemDisplay.sprite = ingredient.ingredientImages[0];
 	}
 }

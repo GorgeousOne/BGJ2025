@@ -38,15 +38,15 @@ public class DragNDropLogic : MonoBehaviour {
 			Vector2 spawnPoint = hit2D.point + clickDist.normalized * 0.5f;
 			
 			GameObject dropObj = Instantiate(dropPrefab, spawnPoint, Quaternion.identity);
-			dropObj.transform.localScale = slot.itemDisplay.transform.localScale;
+			dropObj.transform.localScale = slot.itemDisplay.transform.localScale * 1.5f;
 			draggedDrop = dropObj.GetComponent<Drop>();
-			draggedDrop.setItem(ingredient);
+			draggedDrop.SetItem(ingredient);
 		}
 	}
 
 	void DropDrop() {
 		if (!draggedDrop) return;
-		draggedDrop.setFalling();
+		draggedDrop.SetFalling();
 		draggedDrop = null;
 	}
 

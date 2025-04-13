@@ -7,8 +7,8 @@ public class LevelSelection : MonoBehaviour
     public GameObject levelSelectionHolder;
     public Transform ingredientsHolder;
     public CanvasGroup completeScreen;
-    public GameObject ingredientPrefab;
-    public Button startLevelButton, lastLevelButton, nextLevelButton, menuButton;
+    public GameObject ingredientPrefab, sticker;
+    public Button startLevelButton, lastLevelButton, nextLevelButton, menuButton, failButton;
     public Potion[] levels;
     public TMPro.TMP_Text potionName, completePotionName, potionDescription;
     public LevelManager levelManager;
@@ -28,6 +28,7 @@ public class LevelSelection : MonoBehaviour
         lastLevelButton.onClick.AddListener(LastLevel);
         nextLevelButton.onClick.AddListener(NextLevel);
         menuButton.onClick.AddListener(OpenMenu);
+        failButton.onClick.AddListener(OpenMenu);
         SetLevel(0);
     }
 
@@ -43,6 +44,9 @@ public class LevelSelection : MonoBehaviour
     void OpenMenu()
     {
         completeScreen.alpha = 0;
+        levelManager.endscreen.SetActive(false);
+        levelManager.uiEndScreen.gameObject.SetActive(false);
+        levelManager.uiEndScreen.alpha = 0;
         completeScreen.gameObject.SetActive(false);
         levelSelectionHolder.SetActive(true);
         SetLevel(0);
@@ -52,6 +56,7 @@ public class LevelSelection : MonoBehaviour
     {
         potionName.font = gibberishFont;
         potionDescription.font = gibberishFont;
+        sticker.SetActive(false);
         if(currentLevel > 0){ currentLevel--; }
         else{ currentLevel = levels.Length-1; }
         SetLevel(currentLevel);
@@ -61,6 +66,7 @@ public class LevelSelection : MonoBehaviour
     {
         potionName.font = gibberishFont;
         potionDescription.font = gibberishFont;
+        sticker.SetActive(false);
         if(currentLevel < levels.Length-1){ currentLevel++; }
         else{ currentLevel = 0; }
         SetLevel(currentLevel);
@@ -80,6 +86,7 @@ public class LevelSelection : MonoBehaviour
             potionName.text = levels[index].potionName;
             potionDescription.font = normalFont;
             potionDescription.text = levels[index].description;
+            sticker.SetActive(true);
         }
         else{
             potionName.text = "<Uppercase>" + levels[index].potionName + "</Uppercase";
@@ -90,7 +97,7 @@ public class LevelSelection : MonoBehaviour
         currentIngredients.Clear();
         foreach (LevelIngredient ingredient in levels[currentLevel].ingredients){
             GameObject current = Instantiate(ingredientPrefab, ingredientsHolder);
-            current.GetComponent<MenuIngredient>().image.sprite = ingredient.ingredient.ingredientImage;
+            current.GetComponent<MenuIngredient>().image.sprite = ingredient.ingredient.ingredientImages[0];
             currentIngredients.Add(current);
         }
     }

@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Kurkuma
   m_EditorClassIdentifier: 
   ingredientName: Kurkuma
-  ingredientImage: {fileID: -3175694589373989737, guid: d0ec9effe00410443afe4331a5e8c328, type: 3}
+  ingredientImages:
+  - {fileID: -3175694589373989737, guid: d0ec9effe00410443afe4331a5e8c328, type: 3}
+  - {fileID: -3175694589373989737, guid: d0ec9effe00410443afe4331a5e8c328, type: 3}

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +9,21 @@ public class Cauldron : MonoBehaviour
     public Color startColor;
     LevelManager level;
     List<IngredientList> currentIngredients = new();
+    Vector3 originalRot;
     float currentValue = 0.5f, currentIngredientsAmount;
     void Start()
     {
         level = LevelManager.instance;
+        originalRot = transform.rotation.eulerAngles;
+    }
+
+    void FixedUpdate()
+    {
+        if(currentValue < 0.5f){
+            float magnitude = 1 - currentValue * 2;
+            float z = Random.Range(-2f + currentValue * 2, 2f - currentValue * 2) * magnitude;
+            transform.rotation = Quaternion.Euler(new Vector3(originalRot.x,originalRot.y, originalRot.z + z));
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other) 
@@ -29,6 +41,7 @@ public class Cauldron : MonoBehaviour
             if(currentIngredientsAmount > level.currentPotion.maxIngredients){ level.FailLevel(); }
         }
         Instantiate(splashVFX, other.transform.position, Quaternion.identity);
+        LeanTween.cancel(other.gameObject);
         Destroy(other.gameObject);
     }
 
@@ -51,6 +64,7 @@ public class Cauldron : MonoBehaviour
     {
         currentIngredients.Clear();
         currentIngredientsAmount = 0;
+        currentValue = 0.5f;
         liquidSprite.color = startColor;
     }
 
@@ -94,6 +108,24 @@ public class Cauldron : MonoBehaviour
         currentValue += 0.1f;
         Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
         LeanTween.color(liquidSprite.gameObject, lerpColor, 0.5f);
+    }
+
+    public IEnumerator Shake(float duration, float magnitude)
+    {
+        Vector3 originalRot = transform.rotation.eulerAngles;
+        float elapsed = 0.0f;
+
+        while(elapsed < duration){
+            float z = Random.Range(-1f, 1f) * magnitude;
+
+            transform.rotation = Quaternion.Euler(new Vector3(originalRot.x,originalRot.y, originalRot.z + z));
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        transform.rotation = Quaternion.Euler(originalRot);
     }
 }
 

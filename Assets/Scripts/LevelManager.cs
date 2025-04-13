@@ -8,9 +8,11 @@ public class LevelManager : MonoBehaviour
     public Potion currentPotion;
     public Volume globalVolume;
     public GameObject endscreen;
+    public CanvasGroup uiEndScreen;
     ColorAdjustments colorAdjustments;
     public Slot[] slots;
     public Cauldron cauldron;
+    public Camera mainCam;
     int index;
     LevelSelection levelselection;
     public static LevelManager instance;
@@ -47,9 +49,32 @@ public class LevelManager : MonoBehaviour
     IEnumerator Flashbang()
     {
         LeanTween.value(gameObject, 0f, 9f, 0.1f).setOnUpdate((float val) => { colorAdjustments.postExposure.Override(val); } );
-        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(Screenshake(3f, 1f));
+        yield return new WaitForSeconds(1f);
         endscreen.SetActive(true);
+        uiEndScreen.gameObject.SetActive(true);
         LeanTween.value(gameObject, 6f, 0f, 6f).setOnUpdate((float val) => { colorAdjustments.postExposure.Override(val); } );
+        yield return new WaitForSeconds(2f);
+        LeanTween.alphaCanvas(uiEndScreen, 1f, 1f);
+    }
+
+    public IEnumerator Screenshake(float duration, float magnitude)
+    {
+        Vector3 originalPos = mainCam.transform.localPosition;
+        float elapsed = 0.0f;
+
+        while(elapsed < duration){
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            mainCam.transform.localPosition = new Vector3(originalPos.x + x,originalPos.y + y, originalPos.z);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        mainCam.transform.localPosition = originalPos;
     }
 }
 
