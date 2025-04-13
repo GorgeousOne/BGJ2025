@@ -4,11 +4,19 @@ using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-	public Button playButton, exitButton;
+	public Button introButton, playButton, exitButton;
+	public CanvasGroup intro;
 
 	private void Start() {
+		introButton.onClick.AddListener(StartIntro);
 		playButton.onClick.AddListener(StartGame);
 		exitButton.onClick.AddListener(EndGame);
+	}
+
+	void StartIntro()
+	{
+		intro.gameObject.SetActive(true);
+		LeanTween.alphaCanvas(intro, 1f, 0.5f);
 	}
 
 	void StartGame()
