@@ -56,6 +56,7 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         endscreen.SetActive(true);
         uiEndScreen.gameObject.SetActive(true);
+        audios[2].Play(); //teacher voice
         LeanTween.value(gameObject, 6f, 0f, 6f).setOnUpdate((float val) => { colorAdjustments.postExposure.Override(val); } );
         yield return new WaitForSeconds(2f);
         LeanTween.alphaCanvas(uiEndScreen, 1f, 1f);
