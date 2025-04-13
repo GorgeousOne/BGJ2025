@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Resources/PerformanceTestRunSettings.json.meta
 guid: 7740c482c81ee438289c7aa6d53a5709
 TextScriptImporter:
+========
+guid: ff62c8b08311be94691e75827429147e
+DefaultImporter:
+>>>>>>>> Stashed changes:Assets/Sounds/Foley/Recordings/PoD_Blubber.m4a.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
