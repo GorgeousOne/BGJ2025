@@ -16,7 +16,7 @@ public class LevelSelection : MonoBehaviour
     public AudioClip pageTurnSound;
     public LevelManager levelManager;
     public TMPro.TMP_FontAsset gibberishFont, normalFont;
-    bool menuOpen;
+    bool menuOpen = true;
     List<GameObject> currentIngredients = new();
     int currentLevel;
     public static LevelSelection instance;
@@ -97,7 +97,7 @@ public class LevelSelection : MonoBehaviour
         levelManager.currentPotion = levels[currentLevel];
         levelSelectionHolder.SetActive(false);
         levelManager.StartLevel(currentLevel);
-        menuOpen = true;
+        menuOpen = false;
     }
 
     void SetLevel(int index)
