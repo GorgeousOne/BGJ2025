@@ -1,10 +1,40 @@
 fileFormatVersion: 2
-guid: fff17865d1743ea4e8712facce818274
+guid: 505edf881321e9840b73ab80e6ffac1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6284710670569693487
-    second: room-background_0
+      213: -8092140889840403818
+    second: swirl_0
+  - first:
+      213: 6764638862342516094
+    second: swirl_1
+  - first:
+      213: -3242385427370679131
+    second: swirl_2
+  - first:
+      213: -4966535995175806551
+    second: swirl_3
+  - first:
+      213: -3017265158409811870
+    second: swirl_4
+  - first:
+      213: 7770684232606380265
+    second: swirl_5
+  - first:
+      213: -6622089443463920540
+    second: swirl_6
+  - first:
+      213: 5694494276217105292
+    second: swirl_7
+  - first:
+      213: 8001310042293627555
+    second: swirl_8
+  - first:
+      213: 5004375933951924750
+    second: swirl_9
+  - first:
+      213: -2537183109749819353
+    second: swirl_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +76,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,23 +130,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: room-background_0
+      name: swirl_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 33
         y: 0
-        width: 1920
-        height: 1080
+        width: 458
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1de169461f838c8a0800000000000000
-      internalID: -6284710670569693487
+      spriteID: 69a36a41cb0f2bf80800000000000000
+      internalID: -8092140889840403818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swirl_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 426
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9da5383d1531bb0800000000000000
+      internalID: -4966535995175806551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swirl_8
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 467
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa6da8371d5a0f60800000000000000
+      internalID: 8001310042293627555
       vertices: []
       indices: 
       edges: []
@@ -125,7 +199,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4e35770de22bb2948b8e06e86ad75a18
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +209,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      room-background_0: -6284710670569693487
+      swirl_0: -8092140889840403818
+      swirl_3: -4966535995175806551
+      swirl_8: 8001310042293627555
+      swirl_9: 5004375933951924750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
