@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -16,7 +17,7 @@ public class LevelManager : MonoBehaviour
     int index;
     LevelSelection levelselection;
     public static LevelManager instance;
-
+    
     void Awake()
     {
         instance = this;
@@ -46,8 +47,11 @@ public class LevelManager : MonoBehaviour
         levelselection.LevelComplete(index);
     }
 
-    IEnumerator Flashbang()
-    {
+    IEnumerator Flashbang() {
+        AudioSource[] audios = GetComponents<AudioSource>();
+        audios[0].Play(); //explosion
+        audios[1].Play(); //tinnintus
+        
         LeanTween.value(gameObject, 0f, 9f, 0.1f).setOnUpdate((float val) => { colorAdjustments.postExposure.Override(val); } );
         StartCoroutine(Screenshake(3f, 0.3f));
         yield return new WaitForSeconds(1f);
