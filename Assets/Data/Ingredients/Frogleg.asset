@@ -16,3 +16,4 @@ MonoBehaviour:
   ingredientImages:
   - {fileID: -1326192347945098025, guid: 8396e3953c6ab3b418757011cd444d8d, type: 3}
   - {fileID: -3715753065564473513, guid: 8396e3953c6ab3b418757011cd444d8d, type: 3}
+  sound: {fileID: 8300000, guid: 64f10d1af3f2cc84cb2ee7bac0546e1f, type: 3}

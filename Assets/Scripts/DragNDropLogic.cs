@@ -9,9 +9,11 @@ public class DragNDropLogic : MonoBehaviour {
 	public GameObject dropPrefab;
 	private Drop draggedDrop;
 	private Vector2 dragOffset;
+	private AudioSource ingrediendSound;
 	
 	private void Awake() {
 		mainCam = Camera.main;
+		ingrediendSound = GetComponent<AudioSource>();
 	}
 	
 	//create a drop when mouse clicks an inventory slot
@@ -41,6 +43,11 @@ public class DragNDropLogic : MonoBehaviour {
 			dropObj.transform.localScale = Vector3.one * 0.15f;
 			draggedDrop = dropObj.GetComponent<Drop>();
 			draggedDrop.SetItem(ingredient);
+
+			if (ingredient.sound) {
+				ingrediendSound.clip = ingredient.sound;
+				ingrediendSound.Play();
+			}
 		}
 	}
 
