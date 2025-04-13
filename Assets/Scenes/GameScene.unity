@@ -3818,6 +3818,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3394536302346303007, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3516018900128548547, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
       propertyPath: m_Name
       value: Slot (2)
@@ -3826,9 +3830,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4629073928885642753, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919298283792757847, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5108746720261909533, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251179164208133121, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5650762692023630342, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4447,6 +4463,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 2bbb7259-e520-45ad-b36b-9afbea883b26
     m_ActionName: 'Gameplay/Move[/Mouse/position]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 869857798}
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
+        m_MethodName: BackToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 32e12226-6faf-4374-91a6-150b182f8695
+    m_ActionName: 'Gameplay/Escape[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -4593,6 +4625,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3394536302346303007, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3516018900128548547, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
       propertyPath: m_Name
       value: Slot
@@ -4601,9 +4637,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4629073928885642753, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919298283792757847, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5108746720261909533, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251179164208133121, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5650762692023630342, guid: de2e3445f7119ed4a85e78f4b818c7f4, type: 3}
       propertyPath: m_LocalPosition.x

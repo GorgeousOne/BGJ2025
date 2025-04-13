@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352d4c68bc88eaf4b99112e5d90c75eb, type: 3}
-  m_Name: Warm Glow Potion
+  m_Name: Tincture of Happy Endings
   m_EditorClassIdentifier: 
-  potionName: Warm Glow Potion
-  description: This potion gives off some yellow light when shaken. Kurkuma is purely
-    used for the yellow color.
+  potionName: Tincture of Happy Endings
+  description: 'Ever long for a Happy Ending in life? With this tincture you shall
+    receive a reality altering ending of your own. Just remember: Relax and it will
+    be just fine.
+
+    One time use only'
   ingredients:
   - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
     correctAmount: 0.5

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class LevelSelection : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class LevelSelection : MonoBehaviour
     public AudioClip pageTurnSound;
     public LevelManager levelManager;
     public TMPro.TMP_FontAsset gibberishFont, normalFont;
+    bool menuOpen;
     List<GameObject> currentIngredients = new();
     int currentLevel;
     public static LevelSelection instance;
@@ -45,8 +47,18 @@ public class LevelSelection : MonoBehaviour
 
     }
 
+    public void BackToMenu()
+    {
+        if(!menuOpen){ OpenMenu(); }
+    }
+
+    public void SetMenuOpen(bool value){ menuOpen = value; }
+
+    public bool GetMenuOpen(){ return menuOpen; }
+
     void OpenMenu()
     {
+        menuOpen = true;
         completeScreen.alpha = 0;
         levelManager.endscreen.SetActive(false);
         levelManager.uiEndScreen.gameObject.SetActive(false);
@@ -85,6 +97,7 @@ public class LevelSelection : MonoBehaviour
         levelManager.currentPotion = levels[currentLevel];
         levelSelectionHolder.SetActive(false);
         levelManager.StartLevel(currentLevel);
+        menuOpen = true;
     }
 
     void SetLevel(int index)

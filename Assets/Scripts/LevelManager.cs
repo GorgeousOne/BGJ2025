@@ -37,6 +37,7 @@ public class LevelManager : MonoBehaviour
 
     public void FailLevel()
     {
+        levelselection.SetMenuOpen(true);
         StartCoroutine(Flashbang());
     }
 
