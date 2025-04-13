@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bbc2e0f2822d2bf43b067264c8d20055
+guid: 984e75e66f666c94c877bba79c3b77e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2480487981893905673
-    second: Room-wip_0
+      213: -1800238276111484219
+    second: blase_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Room-wip_0
+      name: blase_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 3
+        y: 11
+        width: 119
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f296999259839dd0800000000000000
-      internalID: -2480487981893905673
+      spriteID: 5ca305173d44407e0800000000000000
+      internalID: -1800238276111484219
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Room-wip_0: -2480487981893905673
+      blase_0: -1800238276111484219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -79,7 +79,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cauldron-cracks_0: 7331216882541744264
+      cauldron-cracks_1: -314053653207392223
+      cauldron-cracks_10: 8876909414890511092
+      cauldron-cracks_11: 7451895233997928592
+      cauldron-cracks_2: 4669848620370119796
+      cauldron-cracks_3: -4560967359461492161
+      cauldron-cracks_4: -2388480987609214022
+      cauldron-cracks_5: 7012321013966114000
+      cauldron-cracks_6: -7525640422352897233
+      cauldron-cracks_7: 8139440006343405333
+      cauldron-cracks_8: 1052621178913665815
+      cauldron-cracks_9: -271723588353076672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

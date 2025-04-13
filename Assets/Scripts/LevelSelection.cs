@@ -6,10 +6,11 @@ public class LevelSelection : MonoBehaviour
 {
     public GameObject levelSelectionHolder;
     public Transform ingredientsHolder;
+    public CanvasGroup completeScreen;
     public GameObject ingredientPrefab;
-    public Button startLevelButton, lastLevelButton, nextLevelButton;
+    public Button startLevelButton, lastLevelButton, nextLevelButton, menuButton;
     public Potion[] levels;
-    public TMPro.TMP_Text potionName, potionDescription;
+    public TMPro.TMP_Text potionName, completePotionName, potionDescription;
     public LevelManager levelManager;
     public TMPro.TMP_FontAsset gibberishFont, normalFont;
     List<GameObject> currentIngredients = new();
@@ -26,24 +27,25 @@ public class LevelSelection : MonoBehaviour
         startLevelButton.onClick.AddListener(StartLevel);
         lastLevelButton.onClick.AddListener(LastLevel);
         nextLevelButton.onClick.AddListener(NextLevel);
+        menuButton.onClick.AddListener(OpenMenu);
         SetLevel(0);
     }
 
     public void LevelComplete(int index)
     {
-        levelSelectionHolder.SetActive(true);
+        completeScreen.gameObject.SetActive(true);
+        LeanTween.alphaCanvas(completeScreen, 1, 0.5f);
         PlayerPrefs.SetInt(levels[index].potionName, 1);
-        potionName.font = normalFont;
-        potionName.text = levels[index].potionName;
-        potionDescription.font = normalFont;
-        potionDescription.text = levels[index].description;
-        foreach (GameObject ingredient in currentIngredients){ Destroy(ingredient); }
-        currentIngredients.Clear();
-        foreach (LevelIngredient ingredient in levels[currentLevel].ingredients){
-            GameObject current = Instantiate(ingredientPrefab, ingredientsHolder);
-            current.GetComponent<MenuIngredient>().image.sprite = ingredient.ingredient.ingredientImage;
-            currentIngredients.Add(current);
-        }
+        completePotionName.text = levels[index].potionName;
+
+    }
+
+    void OpenMenu()
+    {
+        completeScreen.alpha = 0;
+        completeScreen.gameObject.SetActive(false);
+        levelSelectionHolder.SetActive(true);
+        SetLevel(0);
     }
 
     void LastLevel()

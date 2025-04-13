@@ -40,6 +40,7 @@ public class LevelManager : MonoBehaviour
 
     public void CompleteLevel()
     {
+        Debug.Log("Level complete");
         levelselection.LevelComplete(index);
     }
 

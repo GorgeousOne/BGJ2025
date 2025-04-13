@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 24ee5d0b39715274a8c7644652c9abb5
+guid: be6078c0ab6e5c34e9052823b6f86c04
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1988130922360748163
-    second: cauldron-full_0
+      213: 2771018343892702601
+    second: seastar_0
   - first:
-      213: 6216799937954973941
-    second: cauldron-full_1
+      213: 5841859166511862138
+    second: seastar_1
   - first:
-      213: 1793967745107602925
-    second: cauldron-full_2
+      213: -8819630445476768975
+    second: seastar_2
   - first:
-      213: -1850832473669616768
-    second: cauldron-full_3
+      213: 4893966802148702277
+    second: seastar_3
   - first:
-      213: 5381973375352221317
-    second: cauldron-full_4
+      213: -6524257422064569834
+    second: seastar_4
   - first:
-      213: -4164116913053789666
-    second: cauldron-full_5
-  - first:
-      213: 1799185607640394743
-    second: cauldron-full_6
-  - first:
-      213: 4818708200796115345
-    second: cauldron-full_7
-  - first:
-      213: -8464377879302279613
-    second: cauldron-full_8
+      213: 6215361111547919662
+    second: seastar_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -124,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cauldron-full_0
+      name: seastar_0
       rect:
         serializedVersion: 2
-        x: 513
-        y: 7
-        width: 897
-        height: 846
+        x: 70
+        y: 115
+        width: 822
+        height: 833
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38838425a82479b10800000000000000
-      internalID: 1988130922360748163
+      spriteID: 985d0d59082a47620800000000000000
+      internalID: 2771018343892702601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron-full_1
+      name: seastar_1
       rect:
         serializedVersion: 2
-        x: 1395
-        y: 619
-        width: 7
-        height: 6
+        x: 1121
+        y: 102
+        width: 839
+        height: 865
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +152,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f80a750b92864650800000000000000
-      internalID: 6216799937954973941
+      spriteID: a719ccfd5f3721150800000000000000
+      internalID: 5841859166511862138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron-full_2
+      name: seastar_2
       rect:
         serializedVersion: 2
-        x: 1399
-        y: 592
+        x: 1956
+        y: 486
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133132796d06a9580800000000000000
+      internalID: -8819630445476768975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seastar_3
+      rect:
+        serializedVersion: 2
+        x: 1961
+        y: 480
         width: 8
-        height: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,42 +196,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: deda5a9c82475e810800000000000000
-      internalID: 1793967745107602925
+      spriteID: 548b0a090ecdae340800000000000000
+      internalID: 4893966802148702277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron-full_3
+      name: seastar_4
       rect:
         serializedVersion: 2
-        x: 1393
-        y: 577
-        width: 8
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 08b3a2cdba58056e0800000000000000
-      internalID: -1850832473669616768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron-full_4
-      rect:
-        serializedVersion: 2
-        x: 1393
-        y: 558
+        x: 1963
+        y: 471
         width: 9
-        height: 18
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58eaa7c154c90ba40800000000000000
-      internalID: 5381973375352221317
+      spriteID: 612b2ae017e2575a0800000000000000
+      internalID: -6524257422064569834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cauldron-full_5
+      name: seastar_5
       rect:
         serializedVersion: 2
-        x: 312
-        y: 407
-        width: 13
-        height: 17
+        x: 1957
+        y: 444
+        width: 11
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,74 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e129b32eab51636c0800000000000000
-      internalID: -4164116913053789666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron-full_6
-      rect:
-        serializedVersion: 2
-        x: 1222
-        y: 15
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7fba66417cdf7f810800000000000000
-      internalID: 1799185607640394743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron-full_7
-      rect:
-        serializedVersion: 2
-        x: 1229
-        y: 12
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 191d6b8f39d7fd240800000000000000
-      internalID: 4818708200796115345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cauldron-full_8
-      rect:
-        serializedVersion: 2
-        x: 725
-        y: 3
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34e638b3a2d788a80800000000000000
-      internalID: -8464377879302279613
+      spriteID: e2d37942006614650800000000000000
+      internalID: 6215361111547919662
       vertices: []
       indices: 
       edges: []
@@ -334,16 +259,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cauldron-full_0: 1988130922360748163
-      cauldron-full_1: 6216799937954973941
-      cauldron-full_2: 1793967745107602925
-      cauldron-full_3: -1850832473669616768
-      cauldron-full_4: 5381973375352221317
-      cauldron-full_5: -4164116913053789666
-      cauldron-full_6: 1799185607640394743
-      cauldron-full_7: 4818708200796115345
-      cauldron-full_8: -8464377879302279613
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

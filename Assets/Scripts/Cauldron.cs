@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class Cauldron : MonoBehaviour
 {
-    public SpriteRenderer cauldronSprite;
+    public SpriteRenderer liquidSprite;
+    public GameObject splashVFX;
+    public Color startColor;
     LevelManager level;
     List<IngredientList> currentIngredients = new();
     float currentValue = 0.5f, currentIngredientsAmount;
@@ -26,11 +28,13 @@ public class Cauldron : MonoBehaviour
             CheckPercentages();
             if(currentIngredientsAmount > level.currentPotion.maxIngredients){ level.FailLevel(); }
         }
+        Instantiate(splashVFX, other.transform.position, Quaternion.identity);
         Destroy(other.gameObject);
     }
 
     public void PrepareIngredients(LevelIngredient[] _ingredient)
     {
+        ResetCauldron();
         foreach (LevelIngredient item in _ingredient){
             float amount = _ingredient.Length;
             IngredientList listElement = new(){
@@ -41,6 +45,13 @@ public class Cauldron : MonoBehaviour
             currentIngredients.Add(listElement);
             currentIngredientsAmount++;
         }
+    }
+
+    public void ResetCauldron()
+    {
+        currentIngredients.Clear();
+        currentIngredientsAmount = 0;
+        liquidSprite.color = startColor;
     }
 
     void CheckPercentages()
@@ -75,14 +86,14 @@ public class Cauldron : MonoBehaviour
         currentValue -= 0.1f;
         if(currentValue < 0){ level.FailLevel(); }
         Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
-        LeanTween.color(gameObject, lerpColor, 0.5f);
+        LeanTween.color(liquidSprite.gameObject, lerpColor, 0.5f);
     }
 
     void RightColor()
     {
         currentValue += 0.1f;
         Color lerpColor = Color.Lerp(level.currentPotion.wrongColor, level.currentPotion.correctColor, currentValue);
-        LeanTween.color(gameObject, lerpColor, 0.5f);
+        LeanTween.color(liquidSprite.gameObject, lerpColor, 0.5f);
     }
 }
 
