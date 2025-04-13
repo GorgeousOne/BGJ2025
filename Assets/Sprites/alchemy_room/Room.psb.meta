@@ -95,28 +95,6 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
-  - name: Potion
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 1108
-      y: 4
-      width: 607
-      height: 339
-    spriteID: 0d35fe610f5ab6a4da8403df35b63fa0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1108, y: 4}
-    spritePosition: {x: 661, y: 404}
   - name: Cauldron
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -126,7 +104,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 2180
       width: 1096
       height: 848
     spriteID: de2497a8c2ba3be4da9e57dce41cb6fa
@@ -137,8 +115,272 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 2180}
     spritePosition: {x: 313, y: 4}
+  - name: Shelf Row 1 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 4
+      width: 109
+      height: 348
+    spriteID: 83d299125f857f54483b9f690602cdb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 4}
+    spritePosition: {x: 1729, y: 50}
+  - name: Shelf Row 1 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1242
+      y: 3268
+      width: 114
+      height: 602
+    spriteID: a0462cea14d549d4cbeddf341eb7b206
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1242, y: 3268}
+    spritePosition: {x: 1733, y: 299}
+  - name: Shelf Row 1 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 360
+      width: 109
+      height: 348
+    spriteID: cfe7e67a51d6d6c46abb87730bacd982
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 360}
+    spritePosition: {x: 1736, y: 552}
+  - name: Shelf Row 2 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1108
+      y: 3268
+      width: 126
+      height: 823
+    spriteID: 5581d77368e5fea448d8f806a981446d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1108, y: 3268}
+    spritePosition: {x: 1607, y: 216}
+  - name: Shelf Row 2 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1486
+      y: 3268
+      width: 117
+      height: 359
+    spriteID: 0c67e137354b57f429383a1db8e4a4bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1486, y: 3268}
+    spritePosition: {x: 1609, y: 435}
+  - name: Shelf Row 2 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1486
+      y: 3635
+      width: 117
+      height: 359
+    spriteID: 471a178416251264b9f1ea778dffe397
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1486, y: 3635}
+    spritePosition: {x: 1616, y: 680}
+  - name: 'Row 3 1 '
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1932
+      y: 716
+      width: 105
+      height: 253
+    spriteID: a38d53e33079b9447b8ac23b1afb850b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1932, y: 716}
+    spritePosition: {x: 1505, y: 827}
+  - name: Row 3 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1364
+      y: 3268
+      width: 114
+      height: 504
+    spriteID: 451cc2cd004a9c14a8c8239034b39452
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1364, y: 3268}
+    spritePosition: {x: 1493, y: 400}
+  - name: Row 3 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1364
+      y: 3780
+      width: 105
+      height: 302
+    spriteID: cf177fd4b150ad2449577859ddf96ae8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1364, y: 3780}
+    spritePosition: {x: 1502, y: 602}
+  - name: Shelf
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1108
+      y: 2180
+      width: 586
+      height: 1080
+    spriteID: 2b1f7920d8fa9824cabc667fe5f39153
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1108, y: 2180}
+    spritePosition: {x: 1334, y: 0}
+  - name: Background
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 10ed387f32eea164d8294bd76d34ee33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: Papier
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 1080
+    spriteID: 2393c1725530a1149b355e6703c26898
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 0, y: 0}
   spriteImportData: []
   rigSpriteImportData: []
   sharedRigSpriteImportData: []
@@ -188,16 +430,6 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 0
-  - name: Background
-    spriteName: 
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 10ed387f32eea164d8294bd76d34ee33
-    layerID: 332801758
-    mosaicPosition: {x: 0, y: 0}
-    flatten: 0
-    isImported: 0
-    isVisible: 0
   - name: Potion Water
     spriteName: 
     isGroup: 1
@@ -207,17 +439,17 @@ ScriptedImporter:
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
-    isVisible: 1
+    isVisible: 0
   - name: Potion
     spriteName: Potion
     isGroup: 0
-    parentIndex: 2
+    parentIndex: 1
     spriteID: 0d35fe610f5ab6a4da8403df35b63fa0
     layerID: 1932405679
     mosaicPosition: {x: 1108, y: 4}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Cauldron
     spriteName: 
     isGroup: 1
@@ -231,7 +463,7 @@ ScriptedImporter:
   - name: Cauldron Back
     spriteName: 
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 3
     spriteID: 91b879678b023d840bafcef1c8d7ee13
     layerID: 1265378843
     mosaicPosition: {x: 0, y: 0}
@@ -241,7 +473,7 @@ ScriptedImporter:
   - name: Cauldron Front
     spriteName: 
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 3
     spriteID: d0e47213190e48b4980bf22a98aa5bfb
     layerID: -880508047
     mosaicPosition: {x: 0, y: 0}
@@ -251,17 +483,17 @@ ScriptedImporter:
   - name: Cauldron
     spriteName: Cauldron
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 3
     spriteID: de2497a8c2ba3be4da9e57dce41cb6fa
     layerID: 1537435200
-    mosaicPosition: {x: 4, y: 4}
+    mosaicPosition: {x: 4, y: 2180}
     flatten: 0
     isImported: 1
     isVisible: 1
   - name: Cracks
     spriteName: 
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 3
     spriteID: 391f3abf02cf91b429e69af335f6e867
     layerID: 821550895
     mosaicPosition: {x: 0, y: 0}
@@ -271,13 +503,203 @@ ScriptedImporter:
   - name: Ebene 1
     spriteName: 
     isGroup: 0
-    parentIndex: 4
+    parentIndex: 3
     spriteID: 2ee8d6e494a3e47409e7278c74e5bf94
     layerID: 787308478
     mosaicPosition: {x: 0, y: 0}
     flatten: 0
     isImported: 0
     isVisible: 0
+  - name: Shelf
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: a62dd87fb5aa04f458f137848b75681e
+    layerID: 1131308474
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: drawers
+    spriteName: 
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 00469e715736f7a46820a115bb7a17b8
+    layerID: 1196191536
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Row 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 9
+    spriteID: 29bd0bda77f20624da38ac77c08c7908
+    layerID: 916238883
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Drawer 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 11
+    spriteID: 86cca5a3fbb986b47890735a57450166
+    layerID: -2142109068
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Drawer Back
+    spriteName: 
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 1607269386f700b4c807657aba00f489
+    layerID: 1002037230
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Drawer Front
+    spriteName: 
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 1aca8b601d71c514c89ff7d0e324d1a5
+    layerID: 721785092
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Shelf Row 1 3
+    spriteName: Shelf Row 1 3
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 83d299125f857f54483b9f690602cdb3
+    layerID: 1391805976
+    mosaicPosition: {x: 1932, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shelf Row 1 2
+    spriteName: Shelf Row 1 2
+    isGroup: 0
+    parentIndex: 11
+    spriteID: a0462cea14d549d4cbeddf341eb7b206
+    layerID: 1391805977
+    mosaicPosition: {x: 1242, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shelf Row 1 1
+    spriteName: Shelf Row 1 1
+    isGroup: 0
+    parentIndex: 11
+    spriteID: cfe7e67a51d6d6c46abb87730bacd982
+    layerID: 1391805974
+    mosaicPosition: {x: 1932, y: 360}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Row 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: 9
+    spriteID: 949a6363a5d36a74e98c9f5e4a2bdd07
+    layerID: 916238884
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Shelf Row 2 3
+    spriteName: Shelf Row 2 3
+    isGroup: 0
+    parentIndex: 18
+    spriteID: 5581d77368e5fea448d8f806a981446d
+    layerID: 1391806071
+    mosaicPosition: {x: 1108, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shelf Row 2 2
+    spriteName: Shelf Row 2 2
+    isGroup: 0
+    parentIndex: 18
+    spriteID: 0c67e137354b57f429383a1db8e4a4bc
+    layerID: 1391806070
+    mosaicPosition: {x: 1486, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shelf Row 2 1
+    spriteName: Shelf Row 2 1
+    isGroup: 0
+    parentIndex: 18
+    spriteID: 471a178416251264b9f1ea778dffe397
+    layerID: 1391806073
+    mosaicPosition: {x: 1486, y: 3635}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Row 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: 9
+    spriteID: 77fa95c9d90fbfe4db935dd3fa578f63
+    layerID: 916238885
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 'Row 3 1 '
+    spriteName: 'Row 3 1 '
+    isGroup: 0
+    parentIndex: 22
+    spriteID: a38d53e33079b9447b8ac23b1afb850b
+    layerID: 1564531924
+    mosaicPosition: {x: 1932, y: 716}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Row 3 3
+    spriteName: Row 3 3
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 451cc2cd004a9c14a8c8239034b39452
+    layerID: 1596033522
+    mosaicPosition: {x: 1364, y: 3268}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Row 3 2
+    spriteName: Row 3 2
+    isGroup: 0
+    parentIndex: 22
+    spriteID: cf177fd4b150ad2449577859ddf96ae8
+    layerID: 1596033523
+    mosaicPosition: {x: 1364, y: 3780}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shelf
+    spriteName: Shelf
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 2b1f7920d8fa9824cabc667fe5f39153
+    layerID: -1704607622
+    mosaicPosition: {x: 1108, y: 2180}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Background
+    spriteName: Background
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 10ed387f32eea164d8294bd76d34ee33
+    layerID: 332801758
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: Ebene 2
     spriteName: 
     isGroup: 0
@@ -289,15 +711,15 @@ ScriptedImporter:
     isImported: 0
     isVisible: 0
   - name: Papier
-    spriteName: 
+    spriteName: Papier
     isGroup: 0
     parentIndex: -1
     spriteID: 2393c1725530a1149b355e6703c26898
     layerID: 765473083
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 4, y: 1092}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   mosaicPSDLayers: []
   rigPSDLayers: []
   sharedRigPSDLayers: []
