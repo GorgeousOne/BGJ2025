@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      drawer-front_0: -3562220380401356287
+      drawer-front_1: -5244164796926478934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

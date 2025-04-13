@@ -12,20 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352d4c68bc88eaf4b99112e5d90c75eb, type: 3}
   m_Name: Potion of the Woods
   m_EditorClassIdentifier: 
-  potionName: A cool potion
-  description: so cool and also a potion
+  potionName: Potion of the Woods
+  description: 'An ancient recipe that mostly just tastes bad tbh. Might make you
+    feel more connected to nature? Idk '
   ingredients:
   - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
-    correctAmount: 0.2
+    correctAmount: 0.3
   - ingredient: {fileID: 11400000, guid: cb8d161a70cbac647be97fb785cdcfcc, type: 2}
-    correctAmount: 0.2
+    correctAmount: 0.3
   - ingredient: {fileID: 11400000, guid: fef6939d3c2c1384ab47c4cc14c308f2, type: 2}
     correctAmount: 0.2
   - ingredient: {fileID: 11400000, guid: be4589d1cbe27fb418ac9978514384dc, type: 2}
     correctAmount: 0.1
   - ingredient: {fileID: 11400000, guid: cb730ddfffdfcbb479b8154b7f48d13e, type: 2}
-    correctAmount: 0.3
+    correctAmount: 0.1
   maxIngredients: 25
-  errorMargin: 0.025
-  correctColor: {r: 0.8396226, g: 0.31287822, b: 0.31287822, a: 1}
-  wrongColor: {r: 0.30495724, g: 0.4926572, b: 0.8396226, a: 1}
+  errorMargin: 0.05
+  correctColor: {r: 0.22160912, g: 0.5660378, b: 0.3772276, a: 1}
+  wrongColor: {r: 0.4716981, g: 0.20692416, b: 0.30948436, a: 1}
