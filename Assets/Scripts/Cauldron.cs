@@ -40,7 +40,7 @@ public class Cauldron : MonoBehaviour
             CheckPercentages();
             if(currentIngredientsAmount > level.currentPotion.maxIngredients){ currentValue = 0.5f; level.FailLevel(); }
         }
-        Instantiate(splashVFX, other.transform.position, Quaternion.identity);
+        Instantiate(splashVFX, other.transform.position + new Vector3(0f, 0f, -1f), Quaternion.identity);
         LeanTween.cancel(other.gameObject);
         Destroy(other.gameObject);
     }
