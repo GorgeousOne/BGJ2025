@@ -11,7 +11,7 @@ public class LevelSelection : MonoBehaviour
     public Button startLevelButton, lastLevelButton, nextLevelButton, menuButton, failButton;
     public Potion[] levels;
     public TMPro.TMP_Text potionName, completePotionName, potionDescription;
-    public Image potionColorImage;
+    public Image potionColorImage, completePotionColorImage;
     public AudioClip pageTurnSound;
     public LevelManager levelManager;
     public TMPro.TMP_FontAsset gibberishFont, normalFont;
@@ -109,5 +109,6 @@ public class LevelSelection : MonoBehaviour
             currentIngredients.Add(current);
         }
         potionColorImage.color = levels[index].correctColor;
+        completePotionColorImage.color = levels[index].correctColor;
     }
 }
