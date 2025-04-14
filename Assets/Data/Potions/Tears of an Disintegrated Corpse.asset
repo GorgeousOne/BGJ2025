@@ -19,17 +19,17 @@ MonoBehaviour:
     What is it used for?
     I don''t know???? Even if I knew, I wouldn''t write it in this book.'
   ingredients:
-  - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
-    correctAmount: 0.5
+  - ingredient: {fileID: 11400000, guid: ce807ea50bccbda418e89db1c12fcd4e, type: 2}
+    correctAmount: 0.3
   - ingredient: {fileID: 11400000, guid: 837363634a34fc844bbe6b4b3e3078ad, type: 2}
     correctAmount: 0.2
-  - ingredient: {fileID: 11400000, guid: fef6939d3c2c1384ab47c4cc14c308f2, type: 2}
-    correctAmount: 0.1
+  - ingredient: {fileID: 11400000, guid: f8897b560ac08b642a64509b72198ecc, type: 2}
+    correctAmount: 0.3
   - ingredient: {fileID: 11400000, guid: be4589d1cbe27fb418ac9978514384dc, type: 2}
     correctAmount: 0.1
-  - ingredient: {fileID: 11400000, guid: cb730ddfffdfcbb479b8154b7f48d13e, type: 2}
-    correctAmount: 0.3
+  - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
+    correctAmount: 0.1
   maxIngredients: 40
-  errorMargin: 0.05
-  correctColor: {r: 1, g: 0.87096196, b: 0.3443396, a: 1}
-  wrongColor: {r: 0.33175367, g: 0.3058824, b: 0.8392157, a: 1}
+  errorMargin: 0.065
+  correctColor: {r: 0.5933456, g: 0.34718758, b: 0.8867924, a: 1}
+  wrongColor: {r: 0.8392157, g: 0.6737392, b: 0.3058824, a: 1}

@@ -9,7 +9,7 @@ public class LevelSelection : MonoBehaviour
     public Transform ingredientsHolder;
     public CanvasGroup completeScreen;
     public GameObject ingredientPrefab, sticker;
-    public Button startLevelButton, lastLevelButton, nextLevelButton, menuButton, failButton;
+    public Button startLevelButton, lastLevelButton, nextLevelButton, menuButton, failButton, bookButton;
     public Potion[] levels;
     public TMPro.TMP_Text potionName, completePotionName, potionDescription;
     public Image potionColorImage, completePotionColorImage;
@@ -52,7 +52,11 @@ public class LevelSelection : MonoBehaviour
         if(!menuOpen){ OpenMenu(); }
     }
 
-    public void SetMenuOpen(bool value){ menuOpen = value; }
+    public void SetMenuOpen(bool value){ 
+        menuOpen = value; 
+        if(value == true){ bookButton.gameObject.SetActive(false); }
+        if(value == false){ bookButton.gameObject.SetActive(true); }
+    }
 
     public bool GetMenuOpen(){ return menuOpen; }
 

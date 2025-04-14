@@ -27,6 +27,6 @@ MonoBehaviour:
   - ingredient: {fileID: 11400000, guid: f8897b560ac08b642a64509b72198ecc, type: 2}
     correctAmount: 0.1
   maxIngredients: 25
-  errorMargin: 0.05
-  correctColor: {r: 0.22160912, g: 0.5660378, b: 0.3772276, a: 1}
-  wrongColor: {r: 0.4716981, g: 0.20692416, b: 0.30948436, a: 1}
+  errorMargin: 0.065
+  correctColor: {r: 0.22352941, g: 0.35247698, b: 0.5647059, a: 1}
+  wrongColor: {r: 0.9056604, g: 0.56568295, b: 0.10679956, a: 1}
