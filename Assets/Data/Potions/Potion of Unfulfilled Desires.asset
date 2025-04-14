@@ -20,13 +20,13 @@ MonoBehaviour:
   ingredients:
   - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
     correctAmount: 0.1
-  - ingredient: {fileID: 11400000, guid: cb8d161a70cbac647be97fb785cdcfcc, type: 2}
+  - ingredient: {fileID: 11400000, guid: 9527393841d1b8640afa9c5827bbb8a2, type: 2}
     correctAmount: 0.3
   - ingredient: {fileID: 11400000, guid: f8897b560ac08b642a64509b72198ecc, type: 2}
     correctAmount: 0.1
   - ingredient: {fileID: 11400000, guid: be4589d1cbe27fb418ac9978514384dc, type: 2}
     correctAmount: 0.4
-  - ingredient: {fileID: 11400000, guid: cb730ddfffdfcbb479b8154b7f48d13e, type: 2}
+  - ingredient: {fileID: 11400000, guid: b7d08f92a2cade9419eaa3a2799d8b73, type: 2}
     correctAmount: 0.1
   maxIngredients: 25
   errorMargin: 0.065

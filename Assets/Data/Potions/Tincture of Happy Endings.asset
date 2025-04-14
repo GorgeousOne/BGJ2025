@@ -21,11 +21,11 @@ MonoBehaviour:
   ingredients:
   - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
     correctAmount: 0.5
-  - ingredient: {fileID: 11400000, guid: 837363634a34fc844bbe6b4b3e3078ad, type: 2}
+  - ingredient: {fileID: 11400000, guid: ce807ea50bccbda418e89db1c12fcd4e, type: 2}
     correctAmount: 0.2
   - ingredient: {fileID: 11400000, guid: fef6939d3c2c1384ab47c4cc14c308f2, type: 2}
     correctAmount: 0.1
-  - ingredient: {fileID: 11400000, guid: be4589d1cbe27fb418ac9978514384dc, type: 2}
+  - ingredient: {fileID: 11400000, guid: 9527393841d1b8640afa9c5827bbb8a2, type: 2}
     correctAmount: 0.1
   - ingredient: {fileID: 11400000, guid: cb730ddfffdfcbb479b8154b7f48d13e, type: 2}
     correctAmount: 0.3

@@ -27,7 +27,7 @@ MonoBehaviour:
     correctAmount: 0.3
   - ingredient: {fileID: 11400000, guid: be4589d1cbe27fb418ac9978514384dc, type: 2}
     correctAmount: 0.1
-  - ingredient: {fileID: 11400000, guid: 08ccf61939f38a241bf5b2dede160b4f, type: 2}
+  - ingredient: {fileID: 11400000, guid: b7d08f92a2cade9419eaa3a2799d8b73, type: 2}
     correctAmount: 0.1
   maxIngredients: 40
   errorMargin: 0.065
